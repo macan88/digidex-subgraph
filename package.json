@@ -6,11 +6,12 @@
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/",
     "build": "graph build",
-    "create-local": "graph create digi-dex/digidex-subgraph --node http://127.0.0.1:8020",
+    "create-local": "graph create macan88/digidex-subgraph --node http://127.0.0.1:8020",
     "deploy-local": "graph deploy digi-dex/digidex-subgraph --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
-    "create-remote": "graph create digi-dex/digidex-subgraph --node http://188.34.132.202:8020",
+    "create-remote": "graph create macan88/digichain --node http://178.128.81.36:8020",
     "deploy": "graph deploy digi-dex/digidex-subgraph --ipfs http://161.97.117.103:5001/ --node http://188.34.132.202:8020/ --debug",
-    "deploy-staging": "graph deploy $THE_GRAPH_GITHUB_USER/$THE_GRAPH_SUBGRAPH_NAME /Digichain --ipfs https://api.staging.thegraph.com/ipfs/ --node https://api.staging.thegraph.com/deploy/",
+    "deploy-staging": "graph deploy macan88/digichain --ipfs https://api.staging.thegraph.com/ipfs/ --node https://api.staging.thegraph.com/deploy/ --access-token",
+    "deploy-cok": "graph deploy macan88/digichain --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --access-token",
     "watch-local": "graph deploy graphprotocol/DigiDex2 --watch --debug --node http://127.0.0.1:8020/ --ipfs http://localhost:5001"
   },
   "devDependencies": {

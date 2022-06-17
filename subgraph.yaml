@@ -8,7 +8,7 @@ dataSources:
     name: Factory
     network: bsc
     source:
-      address: '0xe4Ea0f1607fae18a03352e23f6Be1CE7E22c0B23'
+      address: '0x6126e30dE58A77De3d7649E06a76635EfBeF2FfC'
       abi: Factory
       startBlock: 18260495
     mapping:
